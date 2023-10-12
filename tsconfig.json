@@ -1,0 +1,14 @@
+{
+  "extends": "@saberhq/tsconfig/tsconfig.cjs.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "target": "ES2020",
+    "paths": {
+      "@solana/spl-token": ["./node_modules/@solana/spl-token"]
+    },
+    "types": ["mocha"]
+  },
+  "include": ["src/", "tests/", ".eslintrc.cjs", ".mocharc.cjs"]
+}
